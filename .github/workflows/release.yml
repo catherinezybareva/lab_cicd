@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: write
+  contents: read
 
 jobs:
   push_to_registry:
@@ -19,6 +20,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
+
       - name: Build and push Docker image
         id: push
         uses: docker/build-push-action@v6
