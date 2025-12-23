@@ -8,7 +8,7 @@ PORT = 8000
 class TestMe():
    """Test class for demonstration purposes"""
 
-    def take_fife(self):
+    def take_five(self):
         """Return the server port number"""
         return 5
 
