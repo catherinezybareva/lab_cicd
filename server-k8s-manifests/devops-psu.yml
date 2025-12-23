@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
+ kind: Deployment
 metadata:
   name: devops-psu
   labels:
@@ -42,3 +42,4 @@ spec:
     targetPort: 8000
   externalIPs:
   - 10.0.2.10
+
